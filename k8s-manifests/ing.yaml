@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: py6app
+spec:
+  rules:
+  - host: "py6app-dev.test.com"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: py6app
+            port:
+              number: 5000

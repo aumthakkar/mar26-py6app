@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: py6app
+  name: py6app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: py6app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: py6app
+    spec:
+      containers:
+      - image: aumthakkar/py6app:v1
+        imagePullPolicy: Always
+        name: py6app
+        resources: {}
+status: {}
