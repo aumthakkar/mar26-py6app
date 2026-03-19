@@ -83,7 +83,7 @@ jobs:
           #If the app exists then delete it first to start afresh
           if argocd app get py6app > /dev/null 2>&1; then 
             echo "Deleting the existing py6app..."
-            argocd app delete py6app --cascase --yes --wait
+            argocd app delete py6app --cascade --yes --wait
 
             #Wait for the app to get deleted
             while argocd app get py6app > /dev/null 2>&1; do
