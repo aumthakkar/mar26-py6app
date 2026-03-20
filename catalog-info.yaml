@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: py6app
+  description: |
+    Python app that displays time named py6app
+  annotations:
+    github.com/project-slug: aumthakkar/mar26-py6app.git
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
