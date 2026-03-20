@@ -5,7 +5,7 @@ metadata:
   description: |
     Python app that displays time named py6app
   annotations:
-    github.com/project-slug: aumthakkar/mar26-py6app.git
+    github.com/project-slug: aumthakkar/mar26-py6app
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
