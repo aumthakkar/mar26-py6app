@@ -1,0 +1,11 @@
+site_name: 'py6app'
+site_description: 'Main documentation for creating Python app named py6app'
+repo_url: https://github.com/aumthakkar/mar26-py6app.git
+edit_uri: edit/main/docs
+
+plugins:
+  - techdocs-core
+
+nav:
+  - Overview:
+      - Getting Started: 'docs/index.md'
